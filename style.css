@@ -269,3 +269,17 @@ body.dark .contact i {
         justify-content: center;
     }
 }
+/* EMAIL LINK STYLING */
+.email a {
+    color: #1e3c72;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.email a:hover {
+    background: #e8eefc;
+    color: #2a5298;
+}
