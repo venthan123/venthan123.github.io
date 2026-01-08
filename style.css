@@ -56,13 +56,32 @@ nav a:hover {
 
 /* HEADER */
 .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 40px;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding: 70px 40px;
     color: white;
+
+    /* Background image */
+    background-image: url("images/header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55); /* darkness */
+    z-index: 0;
+}
+.header-text,
+.profile-img {
+    position: relative;
+    z-index: 1;
+}
+
 
 .header-text {
     max-width: 70%;
